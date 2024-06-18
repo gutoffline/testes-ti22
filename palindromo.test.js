@@ -7,3 +7,8 @@ test ('Palindrome da palavra Arara',()=>{
 test ('Palindrome da palavra Subi no ônibus',()=>{
     expect (isPalindrome('Subi no ônibus')).toBe(true);
 });
+
+test ('Palindrome da palavra Marrocos',()=>{
+    expect (isPalindrome('Marrocos')).toBe(false);
+});
+
