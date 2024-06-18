@@ -8,6 +8,10 @@ test('Palindrome da palavra Arara', () => {
     expect(isPalindromo('subi no onibus')).toBe(true);
   });
 
+  test('Palindrome da palavra marrocos', () => {
+    expect(isPalindromo('marrocos')).toBe(false);
+  });
+
   
 
   
