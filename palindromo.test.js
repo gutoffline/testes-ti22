@@ -10,4 +10,5 @@ test (" palindromo 'Subi no ônibus' para true ", () =>  {
 
 test (" palindromo 'Marrocos' para true ", () =>  {
     expect (palin("Marrocos")).toBe(false);
-})
+}) 
+.
