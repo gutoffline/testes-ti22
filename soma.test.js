@@ -8,3 +8,4 @@ test('soma 5 + 5 para dar 10', () => {
   expect(soma(5, 5)).toBe(10);
 });
 
+// sim
