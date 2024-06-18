@@ -8,3 +8,6 @@ test ('Multiplica (-1) * (-1) para 1',() =>{
     expect (multiplica(-1,-1)).toBe(1);
 });
 
+test ('Multiplica 0 * 5 para dar 0',() => {
+    expect (multiplica(0,5)).toBe(0);
+})
