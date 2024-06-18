@@ -18,3 +18,6 @@ test('soma -1 + -1 para dar -2',() => {
   expect(soma(-1,-1)).toBe(-2);
 });
 
+test('soma 0 + 0 para dar 0',() => {
+  expect(soma(0,0)).toBe(0);
+});
