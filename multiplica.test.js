@@ -4,3 +4,7 @@ test ('Multiplica 3 * 4 para dar 12',() =>{
     expect (multiplica(3,4)).toBe(12);
 });
 
+test ('Multiplica (-1) * (-1) para 1',() =>{
+    expect (multiplica(-1,-1)).toBe(1);
+});
+
