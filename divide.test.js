@@ -8,3 +8,6 @@ test('dividir 9 / 3 para dar 3', ()=>{
     expect(div(9,3)).toBe(3);
 })
 
+test('dividir 1 / 0 para dar Divisão por zero não é permitido', ()=>{
+    expect(() => div(1,0)).toThrow('Divisão por zero não é permitida');
+})
