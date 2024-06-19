@@ -1,14 +1,15 @@
-const palindromo = require('./palindromo');
 
+const isPalindrome = require('./palindromo');
 
-test('palindromo "arara" para dar "true"', () => {
-  expect(palindromo("Arara")).toBe(true);
+test('palindromo "arara" para dar true', ()=> {
+    expect(isPalindrome('arara')).toBe(true);
 });
 
-test('palindromo "Subi no ônibus" para dar "true"', () => {
-    expect(palindromo("Subi no ônibus")).toBe(true);
-  });
+test('palindrommo "subi no onibus" para dar true', ()=> {
+    expect(isPalindrome('subi no onibus')).toBe(true);
+});
 
-  test('palindromo "Marrocos" para dar "false"', () => {
-    expect(palindromo("Marrocos")).toBe(false);
-  });
+test('palindromo "marrocos" para dar felse', ()=> {
+    expect(isPalindrome('marrocos')).toBe(false);
+})
+
