@@ -4,5 +4,5 @@ function divide(a, b) {
     }
     return a / b;
 }
-
+//teste
 module.exports = divide;
