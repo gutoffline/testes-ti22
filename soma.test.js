@@ -5,6 +5,7 @@ test('soma 1 + 2 para dar 3', () => {
 });
 
 
+
 test('soma 5 + 10 para dar 15', ()=> {
   expect(soma(5, 5)).toBe(10);
 });
@@ -20,4 +21,5 @@ test('soma -1 + -1 para dar -2', ()=> {
 test('soma 0 + 0 para dar 0', ()=> {
   expect(soma(0, 0)).toBe(0);
 });
+
 
