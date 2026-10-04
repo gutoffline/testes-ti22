@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakmatic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;500;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <img class="hero__faixa" src="assets/faixa.svg" alt="">
+
+    <div class="hero__fundo" aria-hidden="true">
+      <img class="hero__foto" src="assets/fundo-hero.png" alt="">
+      <img class="hero__gradiente hero__gradiente--superior" src="assets/gradiente-superior.png" alt="">
+      <img class="hero__gradiente hero__gradiente--inferior" src="assets/gradiente-inferior.png" alt="">
+    </div>
+
+    <div class="container">
+      <header class="cabecalho">
+        <a class="cabecalho__logo" href="#">
+          <img src="assets/logo-pakmatic.svg" alt="Pakmatic" width="206" height="57">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__links">
+            <li><a class="ativo" href="#">HOME</a></li>
+            <li><a href="#">EMPRESA</a></li>
+            <li><a href="#">MÁQUINAS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+
+          <a class="botao-menu botao-menu--assistencia" href="#">
+            <span class="botao-menu__icone botao-menu__icone--whatsapp">
+              <img class="icone-contorno" src="assets/icone-whatsapp-contorno.svg" alt="">
+              <img class="icone-interno" src="assets/icone-whatsapp-fone.svg" alt="">
+            </span>
+            ASSISTÊNCIA 24h
+          </a>
+
+          <a class="botao-menu botao-menu--trabalhe" href="#">
+            <span class="botao-menu__icone botao-menu__icone--usuario">
+              <img class="icone-contorno" src="assets/icone-usuario-circulo.svg" alt="">
+              <img class="icone-interno" src="assets/icone-usuario.svg" alt="">
+            </span>
+            Trabalhe conosco
+          </a>
+
+          <ul class="idiomas">
+            <li><a class="ativo" href="#" lang="pt-BR">PT</a></li>
+            <li><a href="#" lang="es">ES</a></li>
+            <li><a href="#" lang="en">EN</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="destaque">
+        <p class="destaque__categoria">EMBALADORA</p>
+        <h1 class="destaque__titulo"><strong>ZWA</strong> <span>85FD</span></h1>
+        <p class="destaque__descricao">
+          Produção de até 180 pacotes por minuto<br>
+          Clique abaixo e veja a ZWA 85FD em funcionamento.
+        </p>
+        <a class="botao-veja" href="#">Veja seu funcionamento</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,304 @@
+/* Hero Pakmatic — Figma: PAKMATIC, node 6060:9 (frame 2473 × 1332) */
+
+:root {
+  --cor-texto: #fff;
+  --fonte: "Archivo", Arial, sans-serif;
+  --largura-container: 1256px;
+  --altura-faixa: 23.3px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: var(--cor-texto);
+  font-family: var(--fonte);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  height: max(720px, 100vw * 1332 / 2473);
+  overflow: hidden;
+}
+
+.hero__faixa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--altura-faixa);
+  z-index: 2;
+}
+
+.hero__fundo {
+  position: absolute;
+  inset: var(--altura-faixa) 0 0;
+  -webkit-mask: url("assets/mascara-hero.svg") center / 100% 100% no-repeat;
+  mask: url("assets/mascara-hero.svg") center / 100% 100% no-repeat;
+}
+
+.hero__foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__gradiente {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.hero__gradiente--superior {
+  top: 0;
+  height: 29%;
+}
+
+.hero__gradiente--inferior {
+  bottom: 0;
+  height: 49.3%;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: min(var(--largura-container), 100% - 32px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 26px;
+}
+
+.cabecalho__logo img {
+  width: 205.6px;
+  height: 56.5px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13.53px;
+  line-height: normal;
+}
+
+.menu__links {
+  display: flex;
+  gap: 28px;
+  margin-right: 14px;
+}
+
+.menu__links a {
+  font-weight: 400;
+}
+
+.menu__links a.ativo,
+.menu__links a:hover {
+  font-weight: 900;
+}
+
+.botao-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 162.4px;
+  height: 31.5px;
+  background: center / 100% 100% no-repeat;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.botao-menu:hover {
+  opacity: 0.85;
+}
+
+.botao-menu--assistencia {
+  padding-left: 37.6px;
+  background-image: url("assets/botao-assistencia.svg");
+}
+
+.botao-menu--trabalhe {
+  padding-left: 42.1px;
+  background-image: url("assets/botao-trabalhe.svg");
+}
+
+.botao-menu__icone {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.botao-menu__icone img {
+  position: absolute;
+}
+
+.botao-menu__icone--whatsapp .icone-contorno {
+  top: 5.08px;
+  left: 11.5px;
+  width: 19.54px;
+  height: 19.62px;
+}
+
+.botao-menu__icone--whatsapp .icone-interno {
+  top: 10.28px;
+  left: 16.32px;
+  width: 9.92px;
+  height: 9.18px;
+}
+
+.botao-menu__icone--usuario .icone-contorno {
+  top: 5.14px;
+  left: 14.74px;
+  width: 19.55px;
+  height: 19.61px;
+}
+
+.botao-menu__icone--usuario .icone-interno {
+  top: 9.33px;
+  left: 20.76px;
+  width: 7.51px;
+  height: 7.51px;
+}
+
+.idiomas {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+  font-weight: 900;
+}
+
+.idiomas a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.7px;
+  height: 31.5px;
+  margin-right: 4px;
+  background: center / 100% 100% no-repeat;
+}
+
+.idiomas a.ativo,
+.idiomas a:hover {
+  background-image: url("assets/idioma-ativo.svg");
+}
+
+/* ---------- Destaque ---------- */
+
+.destaque {
+  position: absolute;
+  left: 59.2%;
+  bottom: 110px;
+  line-height: normal;
+}
+
+.destaque__categoria {
+  margin: 0;
+  font-size: 17.39px;
+  font-weight: 800;
+}
+
+.destaque__titulo {
+  margin: -11.3px 0 0;
+  font-size: 73.8px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.destaque__titulo strong {
+  font-weight: 800;
+}
+
+.destaque__titulo span {
+  font-weight: 100;
+}
+
+.destaque__descricao {
+  margin: 6.5px 0 0;
+  font-size: 17.39px;
+  font-weight: 500;
+  line-height: 20.9px;
+}
+
+.botao-veja {
+  display: inline-flex;
+  align-items: center;
+  width: 203.8px;
+  height: 34.8px;
+  margin: 19.4px 0 0 2px;
+  padding-left: 14.6px;
+  background: url("assets/botao-veja.svg") center / 100% 100% no-repeat;
+  font-size: 16.65px;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.botao-veja:hover {
+  opacity: 0.85;
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 1100px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .destaque {
+    left: 0;
+    right: 0;
+    bottom: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    width: 100%;
+  }
+
+  .destaque__descricao {
+    font-size: 15px;
+  }
+
+  .destaque__titulo {
+    font-size: 52px;
+    margin-top: -6px;
+  }
+}
