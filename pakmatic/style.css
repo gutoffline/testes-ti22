@@ -55,8 +55,7 @@ img {
 .hero__fundo {
   position: absolute;
   inset: var(--altura-faixa) 0 0;
-  -webkit-mask: url("assets/mascara-hero.svg") center / 100% 100% no-repeat;
-  mask: url("assets/mascara-hero.svg") center / 100% 100% no-repeat;
+  overflow: hidden;
 }
 
 .hero__foto {

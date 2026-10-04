@@ -9,10 +9,10 @@ BASE="https://www.figma.com/api/mcp/asset/09431313-e16d-4b63-b445-70e72b5de100"
 
 baixar() { curl -fsSL -o "assets/$2" "$BASE/$1" && echo "ok  $2"; }
 
-baixar 04be1.png fundo-hero.png              # 6001:2393 foto do galpão
+# fundo-hero.webp (6001:2393, foto do galpão) já está no repositório
 baixar 5e729.png gradiente-superior.png      # 6001:2403
 baixar 4cb81.png gradiente-inferior.png      # 6001:2398
-baixar 3ab2a.svg mascara-hero.svg            # máscara do fundo
+# máscara do fundo (3ab2a.svg) é um retângulo: substituída por overflow: hidden
 baixar c419e.svg faixa.svg                   # 6001:2407
 baixar 4ec9e.svg logo-pakmatic.svg           # 6060:2
 baixar 78db3.svg botao-assistencia.svg       # 6001:2486
